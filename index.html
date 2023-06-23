@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title> Musician Selector</title>
+        <link rel="stylesheet"  href="index.css" />
+    </head>
+    <body>
+        <div id="musician-header">
+            <h1 class="header">Musician Selector</h1>
+        </div>  
+
+        <div class = form-container>
+            <form class="add-musician-form">
+                <h3>Add a New Musician!</h3>
+
+                <input
+                    type = "text"
+                    name = "name"
+                    value = ""
+                    placeholder="Enter the Musician's name!"
+                    class-type = "input"      
+                    /> <!--Class needs to be made for the class-type-->
+                <br>
+                <input
+                    type = "text"
+                    name = "img"
+                    value = ""
+                    placeholder="Enter an URL with the musician's image!"
+                    class-type = "input"
+                />
+                <br>
+                <input
+                    type = "text"
+                    name = "instrument"
+                    value= ""
+                    placeholder="Enter the instrument the Musician plays!"
+                    class-type = "input"
+                />
+            </form>
+
+        </div class = musician-container>
+            <h2> Select your Musician!</h2>
+            <p> Select up to FOUR from any of the musicians to make your band!</p>
+
+            <div id= "selection-of-musicians"></div>
+
+            <h2>Your band!</h2>
+            <div id="selected-band"></div>
+            <script type="text/javascript" src="index.html"></script>
+    </body>
+</html>
