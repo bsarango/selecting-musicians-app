@@ -1,0 +1,40 @@
+{
+    "musicians": [
+        {
+            "id": 1,
+            "name": "Jesus Molina",
+            "image": "https://musictalkers.com/images/carousel/night.jpg",
+            "instrument": "Piano/Keys"
+        },
+        {
+            "id": 2,
+            "name": "MonoNeon",
+            "image": "https://f4.bcbits.com/img/0017910510_0",
+            "instrument": "Bass"
+        },
+        {
+            "id": 3,
+            "name": "Jude Smith",
+            "image": "https://i.scdn.co/image/ab6761610000e5eb124f431432422d283533b289",
+            "instrument": "Guitar"
+        },
+        {
+            "id": 4,
+            "name": "JD Beck",
+            "image": "https://www.moderndrummer.com/wp-content/uploads/2019/08/JD-Beck-cropped.jpg",
+            "instrument": "Drums"
+        },
+        {
+            "id": 5,
+            "name": "Marcus Gilmore",
+            "image": "https://s3.amazonaws.com/bit-photos/large/8101652.jpeg",
+            "instrument": "Drums"
+        },
+        {
+            "id": 6,
+            "name": "Jacob Collier",
+            "image": "https://media.npr.org/assets/img/2016/07/11/jacob-collier2-18a5864435ce79a0416b9095b82d34f70f2dcdb4-s1100-c50.jpg",
+            "instrument": "Multi-Instrumental"
+        }
+    ]
+}
