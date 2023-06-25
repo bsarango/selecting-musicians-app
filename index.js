@@ -4,6 +4,8 @@
 const inputBtns = document.querySelector(".submit-btn")
 inputBtns.addEventListener("submit", submitMusicianInput)
 
+document.addEventListener("DOMContentLoaded",renderAllMusicians)
+
 function manageMusicianInput(e){
     e.preventDefault()
     console.log(e.target.value)
@@ -16,17 +18,16 @@ function manageMusicianInput(e){
     addNewMusician(musicianObj)
 }
 
-
 function addNewMusician(musicianObj){
-    fetch(/*currentaplceHolderFor db.json*/,{
+    fetch("http://localhost:3000/musicians",{
         method: 'POST',
         headers: {
-            'Content-type: application/json'
+            'Content-type': 'application/json'
         },
         body:JSON.stringify(musicianObj)
     })
     .then(resp => resp.json())
-    .then(musicianData => renderMusician(musicianData))
+    .then(musicianData => console.log(musicianData)/*renderMusician(musicianData)*/)
 } 
 
 function renderMusician(musicianInfo){
@@ -34,6 +35,23 @@ function renderMusician(musicianInfo){
     let musician = document.createElement("div")
     musician.className("musician")
     musician.innerHTML=`
-        <h2> 
+        <h2> ${musicianInfo.name} </h2>
+        <img src= "${musicianInfo.img}">
+        <h3> Instrument : ${musicianInfo.instrument} </h3>
+        <button type = "button"  class="select-btn" > x </button> 
     `
+    musician.querySelector(".select-btn").addEventListener("click",selectMusician)
 }
+
+function selectMusician(e){
+    
+}
+function renderAllMusicians(){
+    fetch("http://localhost:3000/musicians")
+    .then(resp=>resp.json())
+    .then(musicians=>{
+        console.log(musicians)/*musicians.forEach(musician=>renderMusician(musician))*/
+    })
+}
+
+//renderAllMusicians()
