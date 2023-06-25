@@ -44,7 +44,12 @@ function renderMusician(musicianInfo){
 }
 
 function selectMusician(e){
-    
+    const selectedMusician = e.target
+    const bandContainer = document.querySelector("#selected-band")
+    let newMember = document.newElement("div")
+    newMember.innerHTML = `
+        
+    `
 }
 function renderAllMusicians(){
     fetch("http://localhost:3000/musicians")

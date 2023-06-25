@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title> Musician Selector</title>
         <link rel="stylesheet"  href="index.css" />
@@ -18,7 +18,6 @@
                     name = "name"
                     value = ""
                     placeholder="Enter the Musician's name!"
-                    class-type = "input"      
                 /> 
                
                 <br/>
@@ -27,7 +26,6 @@
                     name = "img"
                     value = ""
                     placeholder="Enter an URL with the musician's image!"
-                    class-type = "input"
                 />
                
                 <br/>
@@ -36,7 +34,6 @@
                     name = "instrument"
                     value= ""
                     placeholder="Enter the instrument the Musician plays!"
-                    class-type = "input"
                 />
                 <br/>
                 <input
@@ -44,17 +41,17 @@
                     name="submit"
                     value="Add Musician"
                 />
-                <button type="button" class="submit-btn"> Submit </button>
+                <!--<button type="button" class="submit-btn"> Add Musician </button>-->
             </form>
 
-        </div class = "musician-container" id="musician-container">
-            <h2> Select your Musician!</h2>
-            <p> Select up to FOUR from any of the musicians to make your band!</p>
+        </div >
+        <h2> Select your Musician!</h2>
+        <p> Select up to FOUR from any of the musicians to make your band!</p>
 
-            <div id= "selection-of-musicians"></div>
+        <div id= "selection-of-musicians"></div>
 
-            <h2>Your band!</h2>
-            <div id="selected-band"></div>
-            <script type="text/javascript" src="index.html"></script>
+        <h2>Your band!</h2>
+        <div id="selected-band"></div>
+        <script type="text/javascript" src="index.html"></script>
     </body>
 </html>
