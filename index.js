@@ -4,7 +4,7 @@
 const inputBtns = document.querySelector(".submit-btn")
 inputBtns.addEventListener("submit", submitMusicianInput)
 
-document.addEventListener("DOMContentLoaded",renderAllMusicians)
+document.addEventListener("DOMContentLoaded",(e)=> console.log("You may select your musicians!"))
 
 function manageMusicianInput(e){
     e.preventDefault()
@@ -48,7 +48,7 @@ function selectMusician(e){
     const bandContainer = document.querySelector("#selected-band")
     let newMember = document.newElement("div")
     newMember.innerHTML = `
-        
+
     `
 }
 function renderAllMusicians(){
@@ -59,4 +59,4 @@ function renderAllMusicians(){
     })
 }
 
-//renderAllMusicians()
+renderAllMusicians()
