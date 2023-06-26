@@ -1,0 +1,26 @@
+#musician-header{
+    display: flex;
+    background: lightcoral;
+    justify-content: center;
+    text-decoration-color: antiquewhite;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+.musician{
+    text-align:center;
+    border: lightcoral;
+    padding: 1rem;
+    width: 15 rem;
+    height: 25 rem;
+    display: inline-block;
+    margin: 2rem 2rem;
+}
+
+.musician-pic{
+    justify-self: center;
+    height: 14rem;
+    width: auto;
+}
