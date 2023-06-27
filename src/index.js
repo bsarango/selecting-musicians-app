@@ -1,6 +1,5 @@
 //Code for Selecting Musicians App
 
-//Add event listener to buttons for submit
 
 document.addEventListener("DOMContentLoaded",(e)=> alert("Select your band!"))
 
@@ -12,6 +11,7 @@ function manageMusicianInput(e){
         image: musicianInputInfo[1].value,
         instrument: musicianInputInfo[2].value,
     }
+    alert("You're musician has been added!")
     addNewMusician(musicianObj)
 }
 
@@ -51,6 +51,7 @@ function selectMusician(e){
     newMember = selectedMusician
     bandContainer.appendChild(selectedMusician)
 }
+
 function renderAllMusicians(){
     fetch("http://localhost:3000/musicians")
     .then(resp=>resp.json())
@@ -59,7 +60,9 @@ function renderAllMusicians(){
     })
 }
 
+
 const inputBtns = document.querySelector(".add-musician-form")
 inputBtns.addEventListener("submit", manageMusicianInput)
+
 
 renderAllMusicians()

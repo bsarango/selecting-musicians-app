@@ -41,6 +41,12 @@
       "image": "https://www.baystatebanner.com/wp-content/uploads/2020/08/At_the_Piano_Color_photocredit_ChickCorea_Prod-e1598460744982.jpg",
       "instrument": "Piano",
       "id": 7
+    },
+    {
+      "name": "Marcos Witt",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Marcos_Witt_2019.jpg",
+      "instrument": "Singer",
+      "id": 8
     }
   ]
 }
