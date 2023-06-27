@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded",(e)=> alert("Select your band!"))
 
 function manageMusicianInput(e){
     e.preventDefault()
+    alert("You're musician is being added!")
     const musicianInputInfo=document.querySelectorAll("input")
     const musicianObj = {
         name: musicianInputInfo[0].value,
         image: musicianInputInfo[1].value,
         instrument: musicianInputInfo[2].value,
     }
-    alert("You're musician has been added!")
     addNewMusician(musicianObj)
 }
 
