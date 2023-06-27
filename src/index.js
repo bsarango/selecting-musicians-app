@@ -25,6 +25,10 @@ function addNewMusician(musicianObj){
     })
     .then(resp => resp.json())
     .then(musicianData => renderMusician(musicianData))
+    .catch(error=>{
+        console.log(error)
+        alert("Unable to add your desired Musician")
+    })
 } 
 
 function renderMusician(musicianObj){
