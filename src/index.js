@@ -58,6 +58,11 @@ function renderAllMusicians(){
     .then(musicians=>{
         musicians.forEach(musician=>renderMusician(musician))
     })
+    .catch(error=>
+        {
+            console.log(error)
+            alert("Could not load musicians!")
+        })
 }
 
 
